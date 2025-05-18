@@ -1,0 +1,47 @@
+# Continuous Integration
+---
+name: CI
+
+'on':
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  # Linter
+  # Runs the yamllint linter
+  yaml-lint:
+    name: Linter - yamllint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Install Python 3
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install Dependencies
+        run: pip3 install yamllint
+      - name: Lint Code
+        run: |
+          yamllint .
+
+  # Linter
+  # Runs the clippy rust linter, and fails with warning
+  clippy:
+    name: Linter - Clippy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Install Rust Toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: Clippy
+      - name: Implement Smart Caching
+        uses: Swatinem/rust-cache@v2
+      - name: Lint Code
+        run: |
+          cargo clippy --all-targets --all-features -- -D warnings
