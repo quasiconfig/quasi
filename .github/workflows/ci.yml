@@ -39,7 +39,7 @@ jobs:
       - name: Install Rust Toolchain
         uses: dtolnay/rust-toolchain@stable
         with:
-          components: Clippy
+          components: clippy
       - name: Implement Smart Caching
         uses: Swatinem/rust-cache@v2
       - name: Lint Code
