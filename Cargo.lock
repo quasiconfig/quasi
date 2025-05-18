@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "quasi"
+name = "quasiconfig-quasi"
 version = "0.1.0"
