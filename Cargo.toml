@@ -1,6 +1,8 @@
 [package]
 name = "quasiconfig"
-description = ""
+description = """
+Quasiconfig is a Blazingly-fast, hyper-portable, and ultra-extensible configuration management system.
+"""
 version = "0.1.0"
 edition = "2024"
 license-file = "LICENSE"
