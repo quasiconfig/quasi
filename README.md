@@ -1,6 +1,5 @@
 <!-- markdownlint-disable MD041 -->
 <div align="center">
-    <!-- TODO: Replace with correct logo -->
     <!-- Project/Repository Logo -->
     <img alt="Quasiconfig Logo"  
         src="https://via.placeholder.com/150x50/9A7FDF/FFFFFF?text=QUASICONFIG"
@@ -23,53 +22,36 @@
         <span>&nbsp;&#8226;&nbsp;</span>
         &lt;<a href="./docs/pages/faq.md">FAQ</a>&gt;
     </p>
-    <!-- TODO: Badges
-        - [x] TODO: License
-        - [ ] TODO: Release
-        - [ ] TODO: Cargo**
-        - [ ] TODO: Docs**
-        - [ ] TODO: Commit Activity*
-        - [ ] TODO: Stars
-        - [ ] TODO: Downloads*
-        - [ ] TODO: Build Pipeline
-        - [ ] TODO: Test Pipeline
-        - [ ] TODO: Chat/Discord*
-    -->
     <!-- Badges -->
     <p>
         <!-- License Badge -->
-        <a href="https://github.com/quasiconfig/quasi/blob/main/LICENSE">
-            <img
+        <a
+          href="https://github.com/quasiconfig/quasi/blob/main/LICENSE"
+        ><img
                 alt="License Badge"
                 src="https://flat.badgen.net/github/license/quasiconfig/quasi"
-            >
-        </a>
-        <!-- TODO: Set the correct link -->
+        ></a>
         <!-- GitHub Stars Badge -->
-        <a href="">
-            <img
+        <a
+          href=""
+        ><img
                 alt="GitHub Stars Badge"
                 src="https://flat.badgen.net/github/stars/quasiconfig/quasi"
-            />
-        </a>
-        <!-- TODO: Set the correct link -->
-        <!-- TODO: Set the correct badge from flat.badgen.net -->
+        /></a>
         <!-- Crates.io Package Badge -->
-        <a href="https://crates.io/crates/quasiconfig">
-            <img
+        <a
+          href="https://crates.io/crates/quasiconfig"
+        ><img
                 alt="Crates.io Package Badge"
                 src="https://img.shields.io/crates/v/quasiconfig?color=9A7FDF&label=CRATES.IO"
-            />
-        </a>
-        <!-- TODO: Set the correct link -->
-        <!-- TODO: Set the correct badge from flat.badgen.net -->
+        /></a>
         <!-- Build Status -->
-        <a href="https://github.com/quasiconfig/quasi/actions">
-            <img
+        <a
+          href="https://github.com/quasiconfig/quasi/actions"
+        ><img
                 alt="Build Status"
                 src="https://img.shields.io/github/actions/workflow/status/quasiconfig/quasi/ci.yml?label=CI"
-            >
-        </a>
+        ></a>
     </p>
 </div>
 
