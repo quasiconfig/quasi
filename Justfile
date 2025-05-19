@@ -39,7 +39,7 @@ _default: help
 @lint:
     cargo clippy --all-targets --all-features -- -D warnings
     yamllint -c ./.config/yamllint.yml .
-    markdownlint-cli2 --config ./.config/markdownlint.yml .
+    markdownlint-cli2 --config ./.config/.markdownlint.yml .
 
 # Formats the source code by running all format-* recipes
 @format:

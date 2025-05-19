@@ -26,7 +26,7 @@ jobs:
         run: pip3 install yamllint
       - name: Lint Code
         run: |
-          yamllint .
+          yamllint -s -c .config/yamllint.yml .
 
   # Linter
   # Runs the clippy rust linter, and fails with warning
@@ -61,3 +61,4 @@ jobs:
       - name: Format Rust Code
         run: |
           cargo fmt --all -- --check
+...
