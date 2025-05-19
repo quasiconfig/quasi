@@ -50,12 +50,14 @@ pre-commit:
         jobs:
           - name: cargo-check
             run: cargo check --workspace --all-features --all-targets --release
+            glob: "*.rs"
     - name: lint
       group:
         parallel: true
         jobs:
           - name: clippy
             run: cargo clippy --all-targets --all-features -- -D warnings
+            glob: "*.rs"
           - name: yamllint
             run: yamllint -s -c .config/yamllint.yml {staged_files}
             glob: "*.{yml,yaml}"
@@ -68,4 +70,5 @@ pre-commit:
         jobs:
           - name: rustfmt
             run: cargo fmt --all -- --check
+            glob: "*.rs"
 ...
