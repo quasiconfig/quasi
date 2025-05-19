@@ -1,9 +1,9 @@
 <!-- markdownlint-disable MD041 -->
 <div align="center">
     <!-- Project/Repository Logo -->
-    <img alt="Quasiconfig Logo"  
-        src="https://via.placeholder.com/150x50/9A7FDF/FFFFFF?text=QUASICONFIG"
-        width="150"
+    <img alt="EntangleNet Logo"
+        src="https://placehold.co/300x150/9A7FDF/FFFFFF?text=Quasiconfig"
+        width=300
     />
     <!-- Name & Tag line -->
     <h1>Quasiconfig</h1>
