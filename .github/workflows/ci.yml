@@ -42,6 +42,20 @@ jobs:
           components: clippy
       - name: Implement Smart Caching
         uses: Swatinem/rust-cache@v2
-      - name: Lint Code
+      - name: Lint Rust Code
         run: |
           cargo clippy --all-targets --all-features -- -D warnings
+
+  rustfmt:
+    name: Formatter - rustfmt
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Install Rust Toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt
+      - name: Format Rust Code
+        run: |
+          cargo fmt --all -- --check 
