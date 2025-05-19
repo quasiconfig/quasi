@@ -38,8 +38,8 @@ _default: help
 # Lints the source code, config files, and docs
 @lint:
     cargo clippy --all-targets --all-features -- -D warnings
-    yamllint .
-    markdownlint-cli2 .
+    yamllint -c ./.config/yamllint.yml .
+    markdownlint-cli2 --config ./.config/markdownlint.yml .
 
 # Formats the source code by running all format-* recipes
 @format:
