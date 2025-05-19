@@ -26,7 +26,7 @@ jobs:
         run: pip3 install yamllint
       - name: Lint Code
         run: |
-          yamllint -s -c .config/yamllint.yml .
+          yamllint -s .
 
   # Linter
   # Runs the clippy rust linter, and fails with warning

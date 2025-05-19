@@ -19,10 +19,10 @@ pre-commit:
             run: cargo clippy --all-targets --all-features -- -D warnings
             glob: "*.rs"
           - name: yamllint
-            run: yamllint -s -c .config/yamllint.yml {staged_files}
+            run: yamllint -s {staged_files}
             glob: "*.{yml,yaml}"
           - name: markdownlint
-            run: markdownlint-cli2 --config .config/.markdownlint.yml {staged_files}
+            run: markdownlint-cli2 {staged_files}
             glob: "*.md"
     - name: format
       group:

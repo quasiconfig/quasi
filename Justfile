@@ -22,14 +22,14 @@ help:
 _default: help
 
 # Display information relevant to this system
-@info: 
+@info:
     echo "{{BOLD}}Architecture:{{NORMAL}} {{arch()}}"
     echo "{{BOLD}}OS:{{NORMAL}} {{os()}}"
     echo "{{BOLD}}OS Family:{{NORMAL}} {{os_family()}}"
     echo $'{{BOLD}}Rust Versions:{{NORMAL}}'
     echo "    $(rustc --version)"
     echo "    $(cargo --version)"
-    echo "    $(cargo fmt --version)" 
+    echo "    $(cargo fmt --version)"
     echo "    $(cargo clippy --version)"
 
 # ================================================================================================ #
@@ -38,8 +38,8 @@ _default: help
 # Lints the source code, config files, and docs
 @lint:
     cargo clippy --all-targets --all-features -- -D warnings
-    yamllint -c ./.config/yamllint.yml .
-    markdownlint-cli2 --config ./.config/.markdownlint.yml .
+    yamllint .
+    markdownlint-cli2 .
 
 # Formats the source code by running all format-* recipes
 @format:
