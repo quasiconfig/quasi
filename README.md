@@ -7,8 +7,7 @@
     />
     <!-- Name & Tag line -->
     <h1>Quasiconfig</h1>
-    <h3>System Configuration as Emergent States — Wavefunction Sold Separately!</h3>
-    <!-- Header Break -->
+    <p>System Configuration as Emergent States — Wavefunction Sold Separately!</p> 
     <hr/>
     <!-- Quick links -->
     <p align="center">
